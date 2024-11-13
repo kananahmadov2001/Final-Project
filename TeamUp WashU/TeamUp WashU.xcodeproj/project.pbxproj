@@ -23,6 +23,11 @@
 		B77624502CE158E6009F5952 /* TeamUp_WashUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776244F2CE158E6009F5952 /* TeamUp_WashUTests.swift */; };
 		B776245A2CE158E6009F5952 /* TeamUp_WashUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77624592CE158E6009F5952 /* TeamUp_WashUUITests.swift */; };
 		B776245C2CE158E6009F5952 /* TeamUp_WashUUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776245B2CE158E6009F5952 /* TeamUp_WashUUITestsLaunchTests.swift */; };
+		CDDA90EE2CE43C14005C06AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDDA90ED2CE43C14005C06AC /* GoogleService-Info.plist */; };
+		CDDA90F12CE43CBE005C06AC /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CDDA90F02CE43CBE005C06AC /* FirebaseAnalytics */; };
+		CDDA90F32CE43CBE005C06AC /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CDDA90F22CE43CBE005C06AC /* FirebaseAuth */; };
+		CDDA90F52CE43CBE005C06AC /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CDDA90F42CE43CBE005C06AC /* FirebaseFirestore */; };
+		CDDA90F72CE43CBE005C06AC /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = CDDA90F62CE43CBE005C06AC /* FirebaseStorage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +68,7 @@
 		B77624552CE158E6009F5952 /* TeamUp WashUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TeamUp WashUUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77624592CE158E6009F5952 /* TeamUp_WashUUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamUp_WashUUITests.swift; sourceTree = "<group>"; };
 		B776245B2CE158E6009F5952 /* TeamUp_WashUUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamUp_WashUUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CDDA90ED2CE43C14005C06AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDDA90F12CE43CBE005C06AC /* FirebaseAnalytics in Frameworks */,
+				CDDA90F72CE43CBE005C06AC /* FirebaseStorage in Frameworks */,
+				CDDA90F32CE43CBE005C06AC /* FirebaseAuth in Frameworks */,
+				CDDA90F52CE43CBE005C06AC /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +130,7 @@
 				5893024D2CE348CB005B7CB9 /* CreateEventViewController.swift */,
 				589302472CE33751005B7CB9 /* ProfileViewController.swift */,
 				589302492CE33780005B7CB9 /* CalendarViewController.swift */,
+				CDDA90ED2CE43C14005C06AC /* GoogleService-Info.plist */,
 				02E1012C2CE4350F0049B438 /* CalendarHelper.swift */,
 				02E1012E2CE435900049B438 /* CalendarCell.swift */,
 				5893024B2CE337B0005B7CB9 /* ChatViewController.swift */,
@@ -164,6 +175,12 @@
 			dependencies = (
 			);
 			name = "TeamUp WashU";
+			packageProductDependencies = (
+				CDDA90F02CE43CBE005C06AC /* FirebaseAnalytics */,
+				CDDA90F22CE43CBE005C06AC /* FirebaseAuth */,
+				CDDA90F42CE43CBE005C06AC /* FirebaseFirestore */,
+				CDDA90F62CE43CBE005C06AC /* FirebaseStorage */,
+			);
 			productName = "TeamUp WashU";
 			productReference = B77624352CE158E3009F5952 /* TeamUp WashU.app */;
 			productType = "com.apple.product-type.application";
@@ -236,6 +253,9 @@
 				Base,
 			);
 			mainGroup = B776242C2CE158E2009F5952;
+			packageReferences = (
+				CDDA90EF2CE43CBE005C06AC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = B77624362CE158E3009F5952 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -253,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B77624422CE158E5009F5952 /* Assets.xcassets in Resources */,
+				CDDA90EE2CE43C14005C06AC /* GoogleService-Info.plist in Resources */,
 				B77624452CE158E5009F5952 /* Base in Resources */,
 				B77624402CE158E3009F5952 /* Base in Resources */,
 			);
@@ -629,6 +650,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CDDA90EF2CE43CBE005C06AC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CDDA90F02CE43CBE005C06AC /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CDDA90EF2CE43CBE005C06AC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		CDDA90F22CE43CBE005C06AC /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CDDA90EF2CE43CBE005C06AC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		CDDA90F42CE43CBE005C06AC /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CDDA90EF2CE43CBE005C06AC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		CDDA90F62CE43CBE005C06AC /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CDDA90EF2CE43CBE005C06AC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B776242D2CE158E2009F5952 /* Project object */;
 }
