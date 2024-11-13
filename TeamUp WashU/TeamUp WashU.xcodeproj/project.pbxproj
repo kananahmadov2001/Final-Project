@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02E1012D2CE4350F0049B438 /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E1012C2CE4350F0049B438 /* CalendarHelper.swift */; };
+		02E1012F2CE435900049B438 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E1012E2CE435900049B438 /* CalendarCell.swift */; };
 		589302482CE33751005B7CB9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589302472CE33751005B7CB9 /* ProfileViewController.swift */; };
 		5893024A2CE33780005B7CB9 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589302492CE33780005B7CB9 /* CalendarViewController.swift */; };
 		5893024C2CE337B0005B7CB9 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5893024B2CE337B0005B7CB9 /* ChatViewController.swift */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02E1012C2CE4350F0049B438 /* CalendarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHelper.swift; sourceTree = "<group>"; };
+		02E1012E2CE435900049B438 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		589302472CE33751005B7CB9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		589302492CE33780005B7CB9 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		5893024B2CE337B0005B7CB9 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +120,8 @@
 				5893024D2CE348CB005B7CB9 /* CreateEventViewController.swift */,
 				589302472CE33751005B7CB9 /* ProfileViewController.swift */,
 				589302492CE33780005B7CB9 /* CalendarViewController.swift */,
+				02E1012C2CE4350F0049B438 /* CalendarHelper.swift */,
+				02E1012E2CE435900049B438 /* CalendarCell.swift */,
 				5893024B2CE337B0005B7CB9 /* ChatViewController.swift */,
 				B776243E2CE158E3009F5952 /* Main.storyboard */,
 				B77624412CE158E5009F5952 /* Assets.xcassets */,
@@ -274,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5893024A2CE33780005B7CB9 /* CalendarViewController.swift in Sources */,
+				02E1012D2CE4350F0049B438 /* CalendarHelper.swift in Sources */,
 				B776243D2CE158E3009F5952 /* ViewController.swift in Sources */,
 				B77624392CE158E3009F5952 /* AppDelegate.swift in Sources */,
 				5893024C2CE337B0005B7CB9 /* ChatViewController.swift in Sources */,
@@ -281,6 +288,7 @@
 				B776243B2CE158E3009F5952 /* SceneDelegate.swift in Sources */,
 				58F6FA402CE333ED00E2391A /* DashboardViewController.swift in Sources */,
 				5893024E2CE348CB005B7CB9 /* CreateEventViewController.swift in Sources */,
+				02E1012F2CE435900049B438 /* CalendarCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
